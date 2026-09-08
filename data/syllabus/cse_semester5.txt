@@ -1,0 +1,76 @@
+COMPUTER SCIENCE & ENGINEERING — SEMESTER 5 SYLLABUS
+
+SUBJECT: CS501 — DATA STRUCTURES AND ALGORITHMS
+Credits: 4 | L-T-P: 3-1-0
+Prerequisites: Programming in C, Discrete Mathematics
+
+Unit 1: Introduction to Data Structures
+  - Arrays, Linked Lists (Singly, Doubly, Circular)
+  - Stacks, Queues, Priority Queues
+  - Time and Space Complexity Analysis (Big-O notation)
+
+Unit 2: Trees
+  - Binary Trees, Binary Search Trees
+  - AVL Trees, Red-Black Trees
+  - B-Trees and B+ Trees
+  - Heap data structure
+
+Unit 3: Graphs
+  - Graph representations (Adjacency List, Matrix)
+  - BFS, DFS traversals
+  - Shortest path algorithms (Dijkstra, Bellman-Ford)
+  - Minimum Spanning Tree (Kruskal, Prim)
+
+Unit 4: Sorting and Searching
+  - Merge Sort, Quick Sort, Heap Sort
+  - Counting Sort, Radix Sort
+  - Binary Search, Hashing
+
+Unit 5: Advanced Topics
+  - Dynamic Programming
+  - Greedy Algorithms
+  - Backtracking
+  - String matching algorithms (KMP, Rabin-Karp)
+
+Textbooks:
+  1. "Introduction to Algorithms" — Cormen, Leiserson, Rivest, Stein (CLRS)
+  2. "Data Structures Using C" — Reema Thareja
+
+Reference Books:
+  1. "Algorithm Design" — Kleinberg & Tardos
+  2. "Data Structures and Algorithm Analysis in C" — Mark Allen Weiss
+
+---
+
+SUBJECT: CS502 — DATABASE MANAGEMENT SYSTEMS
+Credits: 4 | L-T-P: 3-0-1
+Prerequisites: None
+
+Unit 1: Introduction to Databases
+  - Database concepts, DBMS architecture
+  - ER Model, ER diagrams
+  - Relational Model
+
+Unit 2: SQL
+  - DDL, DML, DCL commands
+  - Joins, Subqueries, Views
+  - Aggregate functions, Group By, Having
+
+Unit 3: Normalization
+  - Functional Dependencies
+  - 1NF, 2NF, 3NF, BCNF
+  - Decomposition algorithms
+
+Unit 4: Transaction Management
+  - ACID properties
+  - Concurrency control (Locks, Timestamps)
+  - Recovery mechanisms
+
+Unit 5: Advanced Topics
+  - Indexing (B-Tree, Hash)
+  - NoSQL databases overview
+  - Distributed databases basics
+
+Textbooks:
+  1. "Database System Concepts" — Korth, Silberschatz, Sudarshan
+  2. "Fundamentals of Database Systems" — Elmasri, Navathe
