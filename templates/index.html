@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered Student Support Assistant — get answers about regulations, syllabus, FAQs, and notices.">
+    <title>Student Support Assistant</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- ── Header ─────────────────────────────────────── -->
+    <header class="chat-header">
+        <div class="header-left">
+            <div class="header-icon">🎓</div>
+            <div class="header-info">
+                <h1>Student Support Assistant</h1>
+                <p><span class="status-dot"></span>Online — Powered by AI</p>
+            </div>
+        </div>
+        <div class="header-actions">
+            <button class="btn-icon" id="clear-button" title="Clear conversation">🗑️</button>
+        </div>
+    </header>
+
+    <!-- ── Quick Actions ──────────────────────────────── -->
+    <div class="quick-actions">
+        <button class="quick-action-btn" data-query="What are the college regulations?">
+            <span class="emoji">📋</span>Regulations
+        </button>
+        <button class="quick-action-btn" data-query="Show me the syllabus details">
+            <span class="emoji">📚</span>Syllabus
+        </button>
+        <button class="quick-action-btn" data-query="What are the hostel fees?">
+            <span class="emoji">❓</span>FAQs
+        </button>
+        <button class="quick-action-btn" data-query="Are there any recent notices?">
+            <span class="emoji">📢</span>Notices
+        </button>
+        <button class="quick-action-btn" data-query="What are the library timings?">
+            <span class="emoji">📖</span>Library
+        </button>
+        <button class="quick-action-btn" data-query="Tell me about placement opportunities">
+            <span class="emoji">💼</span>Placements
+        </button>
+    </div>
+
+    <!-- ── Messages ───────────────────────────────────── -->
+    <div class="chat-messages" id="chat-messages">
+
+        <!-- Welcome Card -->
+        <div class="welcome-card" id="welcome-card">
+            <h2>Welcome! How can I help you today?</h2>
+            <p>I can assist you with college regulations, syllabus, FAQs, and notices. Ask me anything!</p>
+
+            <div class="welcome-topics">
+                <div class="welcome-topic" data-query="What are the exam regulations?">
+                    <span class="topic-emoji">📋</span>
+                    <div class="topic-label">Regulations</div>
+                    <div class="topic-hint">Attendance, exams, grading</div>
+                </div>
+                <div class="welcome-topic" data-query="What subjects are in the syllabus?">
+                    <span class="topic-emoji">📚</span>
+                    <div class="topic-label">Syllabus</div>
+                    <div class="topic-hint">Courses, subjects, curriculum</div>
+                </div>
+                <div class="welcome-topic" data-query="What are the admission fees?">
+                    <span class="topic-emoji">❓</span>
+                    <div class="topic-label">FAQs</div>
+                    <div class="topic-hint">Fees, hostel, scholarships</div>
+                </div>
+                <div class="welcome-topic" data-query="Are there any upcoming events?">
+                    <span class="topic-emoji">📢</span>
+                    <div class="topic-label">Notices</div>
+                    <div class="topic-hint">Announcements, deadlines</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typing-indicator">
+            <div class="message-avatar">🤖</div>
+            <div class="typing-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ── Input Area ─────────────────────────────────── -->
+    <div class="chat-input-area">
+        <div class="input-wrapper">
+            <textarea
+                id="message-input"
+                placeholder="Ask me about regulations, syllabus, FAQs, or notices..."
+                rows="1"
+                autofocus
+            ></textarea>
+            <button class="btn-send" id="send-button" title="Send message">
+                ➤
+            </button>
+        </div>
+        <p class="input-hint">Press Enter to send · Shift+Enter for a new line</p>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+
+</body>
+</html>
