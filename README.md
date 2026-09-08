@@ -1,6 +1,6 @@
 # AI Student Support Assistant
 
-An AI-powered student support chatbot for answering questions about college regulations, syllabi, frequently asked questions, and notices. The assistant uses retrieval-augmented generation (RAG): documents are embedded with Ollama, stored in Pinecone, and retrieved by category before the local Ollama chat model writes an answer.
+An AI-powered student support chatbot for answering questions about college regulations, syllabus, frequently asked questions, and notices. The assistant uses retrieval-augmented generation (RAG): documents are embedded with Ollama, stored in Pinecone, and retrieved by category before the local Ollama chat model writes an answer.
 
 ## Features
 
